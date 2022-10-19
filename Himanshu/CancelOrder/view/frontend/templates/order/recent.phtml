@@ -1,0 +1,3 @@
+<?php if($_order->canCancel()): ?>
+    <a href="<?php echo $this->getUrl('cancelorder/cancelorder/index').'?orderid='.$_order->getEntityId(); ?>" class="action cancel"><?= /* @escapeNotVerified */ __('Cancel Order') ?></a>
+<?php endif; ?>
